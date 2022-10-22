@@ -28,9 +28,7 @@ namespace LC_II_TP_PARTE_3
         private void frmPrincinpal_Load(object sender, EventArgs e)
         {
             sideBarExpandida = false;
-            btnReportes.Cursor = btnReporteVentas.Cursor = btnReporteCompras.Cursor =
-                btnReporteRembolsos.Cursor = btnReporteSuministros.Cursor =
-                btnSalir.Cursor = Cursors.Default;
+            SelectorBotones(false);
         }
 
         private void SideBarTimer_Tick(object sender, EventArgs e)
