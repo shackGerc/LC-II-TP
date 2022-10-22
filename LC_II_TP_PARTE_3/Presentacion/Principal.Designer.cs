@@ -1,6 +1,6 @@
 ﻿namespace LC_II_TP_PARTE_3
 {
-    partial class Princinpal
+    partial class frmPrincinpal
     {
         /// <summary>
         /// Required designer variable.
@@ -28,20 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
-            // Princinpal
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(1, 1);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 449);
+            this.flowLayoutPanel1.TabIndex = 0;
+            // 
+            // frmPrincinpal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "Princinpal";
-            this.Text = "frmPrincipal";
+            this.Controls.Add(this.flowLayoutPanel1);
+            this.Name = "frmPrincinpal";
+            this.Text = "Principal";
+            this.Load += new System.EventHandler(this.frmPrincinpal_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }
 

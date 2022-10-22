@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace LC_II_TP_PARTE_3
 {
-    public partial class Princinpal : Form
+    public partial class frmPrincinpal : Form
     {
-        public Princinpal()
+        public frmPrincinpal()
         {
             InitializeComponent();
+        }
+
+        private void frmPrincinpal_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

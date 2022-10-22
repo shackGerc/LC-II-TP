@@ -1,0 +1,11 @@
+C:\Users\fabio\OneDrive\Escritorio\Repositorios\LC-II-TP\LC_II_TP_PARTE_3\bin\Debug\LC_II_TP_PARTE_3.exe.config
+C:\Users\fabio\OneDrive\Escritorio\Repositorios\LC-II-TP\LC_II_TP_PARTE_3\bin\Debug\LC_II_TP_PARTE_3.exe
+C:\Users\fabio\OneDrive\Escritorio\Repositorios\LC-II-TP\LC_II_TP_PARTE_3\bin\Debug\LC_II_TP_PARTE_3.pdb
+C:\Users\fabio\OneDrive\Escritorio\Repositorios\LC-II-TP\LC_II_TP_PARTE_3\obj\Debug\LC_II_TP_PARTE_3.csproj.AssemblyReference.cache
+C:\Users\fabio\OneDrive\Escritorio\Repositorios\LC-II-TP\LC_II_TP_PARTE_3\obj\Debug\LC_II_TP_PARTE_3.csproj.SuggestedBindingRedirects.cache
+C:\Users\fabio\OneDrive\Escritorio\Repositorios\LC-II-TP\LC_II_TP_PARTE_3\obj\Debug\LC_II_TP_PARTE_3.frmPrincinpal.resources
+C:\Users\fabio\OneDrive\Escritorio\Repositorios\LC-II-TP\LC_II_TP_PARTE_3\obj\Debug\LC_II_TP_PARTE_3.Properties.Resources.resources
+C:\Users\fabio\OneDrive\Escritorio\Repositorios\LC-II-TP\LC_II_TP_PARTE_3\obj\Debug\LC_II_TP_PARTE_3.csproj.GenerateResource.cache
+C:\Users\fabio\OneDrive\Escritorio\Repositorios\LC-II-TP\LC_II_TP_PARTE_3\obj\Debug\LC_II_TP_PARTE_3.csproj.CoreCompileInputs.cache
+C:\Users\fabio\OneDrive\Escritorio\Repositorios\LC-II-TP\LC_II_TP_PARTE_3\obj\Debug\LC_II_TP_PARTE_3.exe
+C:\Users\fabio\OneDrive\Escritorio\Repositorios\LC-II-TP\LC_II_TP_PARTE_3\obj\Debug\LC_II_TP_PARTE_3.pdb

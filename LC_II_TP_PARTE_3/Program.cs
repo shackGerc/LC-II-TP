@@ -16,7 +16,7 @@ namespace LC_II_TP_PARTE_3
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Princinpal());
+            Application.Run(new frmPrincinpal());
         }
     }
 }
