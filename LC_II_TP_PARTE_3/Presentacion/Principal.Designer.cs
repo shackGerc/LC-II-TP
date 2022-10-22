@@ -77,7 +77,7 @@
             this.flpSideBar.MaximumSize = new System.Drawing.Size(153, 369);
             this.flpSideBar.MinimumSize = new System.Drawing.Size(54, 369);
             this.flpSideBar.Name = "flpSideBar";
-            this.flpSideBar.Size = new System.Drawing.Size(153, 369);
+            this.flpSideBar.Size = new System.Drawing.Size(54, 369);
             this.flpSideBar.TabIndex = 0;
             // 
             // panel1
@@ -174,6 +174,7 @@
             this.btnReporteSuministros.Text = "            Suministros";
             this.btnReporteSuministros.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnReporteSuministros.UseVisualStyleBackColor = true;
+            this.btnReporteSuministros.Click += new System.EventHandler(this.btnReporteSuministros_Click);
             // 
             // panel7
             // 
@@ -200,6 +201,7 @@
             this.btnReporteRembolsos.Text = "            Rembolsos";
             this.btnReporteRembolsos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnReporteRembolsos.UseVisualStyleBackColor = true;
+            this.btnReporteRembolsos.Click += new System.EventHandler(this.btnReporteRembolsos_Click);
             // 
             // panel6
             // 
@@ -226,6 +228,7 @@
             this.btnReporteCompras.Text = "            Compras";
             this.btnReporteCompras.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnReporteCompras.UseVisualStyleBackColor = true;
+            this.btnReporteCompras.Click += new System.EventHandler(this.btnReporteCompras_Click);
             // 
             // panel5
             // 
@@ -252,6 +255,7 @@
             this.btnReporteVentas.Text = "            Ventas";
             this.btnReporteVentas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnReporteVentas.UseVisualStyleBackColor = true;
+            this.btnReporteVentas.Click += new System.EventHandler(this.btnReporteVentas_Click);
             // 
             // panel3
             // 
@@ -331,7 +335,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(602, 366);
+            this.ClientSize = new System.Drawing.Size(607, 366);
             this.Controls.Add(this.pbLogoPrincipal);
             this.Controls.Add(this.flpSideBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;

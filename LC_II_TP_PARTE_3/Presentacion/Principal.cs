@@ -27,7 +27,7 @@ namespace LC_II_TP_PARTE_3
 
         private void frmPrincinpal_Load(object sender, EventArgs e)
         {
-            sideBarExpandida = true;
+            sideBarExpandida = false;
             btnReportes.Cursor = btnReporteVentas.Cursor = btnReporteCompras.Cursor =
                 btnReporteRembolsos.Cursor = btnReporteSuministros.Cursor =
                 btnSalir.Cursor = Cursors.Default;
@@ -60,7 +60,7 @@ namespace LC_II_TP_PARTE_3
         {
             pbRetraerBarra.Visible = false;
             pbExpandirBarra.Visible = true;
-            SelectorBotones(true);
+            SelectorBotones(false);
             sideBarTimer.Start();
         }
 
@@ -68,7 +68,7 @@ namespace LC_II_TP_PARTE_3
         {
             pbRetraerBarra.Visible = true;
             pbExpandirBarra.Visible = false;
-            SelectorBotones(false);
+            SelectorBotones(true);
 
             if (reportesMenuExpandido)
             {
@@ -114,6 +114,26 @@ namespace LC_II_TP_PARTE_3
                     reportesTimer.Stop();
                 }
             }
+        }
+
+        private void btnReporteVentas_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnReporteCompras_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnReporteRembolsos_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnReporteSuministros_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
