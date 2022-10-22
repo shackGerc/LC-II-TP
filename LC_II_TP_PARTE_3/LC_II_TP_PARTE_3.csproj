@@ -104,7 +104,8 @@
     <Folder Include="AccesoDatos\Interfaces\" />
     <Folder Include="Dominio\Implementaciones\" />
     <Folder Include="Dominio\Interfaces\" />
-    <Folder Include="Presentacion\Reportes\" />
+    <Folder Include="Presentacion\Reportes\Datos\" />
+    <Folder Include="Presentacion\Reportes\Diseño\" />
     <Folder Include="Servicios\Implementaciones\" />
     <Folder Include="Servicios\Interfaces\" />
   </ItemGroup>
