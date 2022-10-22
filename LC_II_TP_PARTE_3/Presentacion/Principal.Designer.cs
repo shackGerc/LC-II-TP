@@ -73,7 +73,7 @@
             this.flpSideBar.Controls.Add(this.ContenedorDeReportes);
             this.flpSideBar.Controls.Add(this.panel4);
             this.flpSideBar.Location = new System.Drawing.Point(-2, -3);
-            this.flpSideBar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.flpSideBar.Margin = new System.Windows.Forms.Padding(2);
             this.flpSideBar.MaximumSize = new System.Drawing.Size(153, 369);
             this.flpSideBar.MinimumSize = new System.Drawing.Size(54, 369);
             this.flpSideBar.Name = "flpSideBar";
@@ -114,7 +114,7 @@
             // 
             this.pbExpandirBarra.Image = ((System.Drawing.Image)(resources.GetObject("pbExpandirBarra.Image")));
             this.pbExpandirBarra.Location = new System.Drawing.Point(8, 9);
-            this.pbExpandirBarra.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbExpandirBarra.Margin = new System.Windows.Forms.Padding(2);
             this.pbExpandirBarra.Name = "pbExpandirBarra";
             this.pbExpandirBarra.Size = new System.Drawing.Size(32, 32);
             this.pbExpandirBarra.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -126,7 +126,7 @@
             // 
             this.pbRetraerBarra.Image = ((System.Drawing.Image)(resources.GetObject("pbRetraerBarra.Image")));
             this.pbRetraerBarra.Location = new System.Drawing.Point(8, 9);
-            this.pbRetraerBarra.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbRetraerBarra.Margin = new System.Windows.Forms.Padding(2);
             this.pbRetraerBarra.Name = "pbRetraerBarra";
             this.pbRetraerBarra.Size = new System.Drawing.Size(32, 32);
             this.pbRetraerBarra.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -313,7 +313,7 @@
             // pbLogoPrincipal
             // 
             this.pbLogoPrincipal.Image = ((System.Drawing.Image)(resources.GetObject("pbLogoPrincipal.Image")));
-            this.pbLogoPrincipal.Location = new System.Drawing.Point(228, 35);
+            this.pbLogoPrincipal.Location = new System.Drawing.Point(199, 32);
             this.pbLogoPrincipal.Name = "pbLogoPrincipal";
             this.pbLogoPrincipal.Size = new System.Drawing.Size(300, 300);
             this.pbLogoPrincipal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -340,7 +340,7 @@
             this.Controls.Add(this.flpSideBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmPrincinpal";
             this.Text = "Principal";
             this.Load += new System.EventHandler(this.frmPrincinpal_Load);
