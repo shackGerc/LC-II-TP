@@ -160,7 +160,7 @@
             // btnReporteSuministros
             // 
             this.btnReporteSuministros.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnReporteSuministros.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.btnReporteSuministros.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnReporteSuministros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReporteSuministros.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReporteSuministros.ForeColor = System.Drawing.Color.White;
@@ -187,7 +187,7 @@
             // btnReporteRembolsos
             // 
             this.btnReporteRembolsos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnReporteRembolsos.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.btnReporteRembolsos.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnReporteRembolsos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReporteRembolsos.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReporteRembolsos.ForeColor = System.Drawing.Color.White;
@@ -214,7 +214,7 @@
             // btnReporteCompras
             // 
             this.btnReporteCompras.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnReporteCompras.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.btnReporteCompras.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnReporteCompras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReporteCompras.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReporteCompras.ForeColor = System.Drawing.Color.White;
@@ -241,7 +241,7 @@
             // btnReporteVentas
             // 
             this.btnReporteVentas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnReporteVentas.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.btnReporteVentas.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnReporteVentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReporteVentas.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReporteVentas.ForeColor = System.Drawing.Color.White;

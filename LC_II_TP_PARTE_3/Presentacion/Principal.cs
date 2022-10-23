@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LC_II_TP_PARTE_3.Presentacion;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -116,12 +117,12 @@ namespace LC_II_TP_PARTE_3
 
         private void btnReporteVentas_Click(object sender, EventArgs e)
         {
-
+            new frmReporteVentas().ShowDialog();
         }
 
         private void btnReporteCompras_Click(object sender, EventArgs e)
         {
-
+            new frmReporteCompras().ShowDialog();
         }
 
         private void btnReporteRembolsos_Click(object sender, EventArgs e)
