@@ -10,13 +10,13 @@ begin
 		sum(dv.cantidad) cantidad_comun,
 		sum(r.cantidad) cantidad_reseta,
 		sum(dv.cantidad * dv.precio_venta) importe_comun,
-		sum(r.cantidad * r.precio_OS) importe_reseta_real
+		sum(r.cantidad * r.precio_venta) importe_reseta_real
 		from Ventas v
 		join Detalles_ventas dv on v.nro_venta = dv.nro_venta
 		left join Recetas r on v.nro_venta = r.nro_venta
 		where fecha between @fecha1 and @fecha2
 		group by v.nro_venta,fecha
-		order by 1, 2
+		order by 2
 	end
 	else
 	begin
