@@ -111,13 +111,13 @@ references Tipos_suministros (cod_tipo_sum)
 create table Detalles_compras
 (cod_detalle_compra int identity(1,1),
 nro_compra int,
-cod_sum int,
+cod_suministro int,
 cantidad int,
 precio_venta money
 constraint pk_detalle primary key (cod_detalle_compra),
 constraint fk_nro_compra foreign key (nro_compra)
 references compras (nro_compra),
-constraint fk_cod_sum foreign key (cod_sum)
+constraint fk_cod_suministro foreign key (cod_suministro)
 references suministros (cod_suministro)
 )
 	
@@ -173,7 +173,7 @@ constraint pk_medico primary key (cod_medico)
 create table Cubiertos
 (cod_cubierto int identity(1,1),
 cod_obra_social int,
-cod_sum int,
+cod_suministro int,
 descuento int,
 cod_localidad int
 constraint pk_cubierto primary key (cod_cubierto),
