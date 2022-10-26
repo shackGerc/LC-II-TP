@@ -56,17 +56,17 @@ namespace LC_II_TP_PARTE_3.Presentacion
 
         private void dtpFechaInicial_ValueChanged(object sender, EventArgs e)
         {
-            if(dtpFechaInicial.Value >= dtpFechaFinal.Value.AddDays(-30))
+            if(dtpFechaInicial.Value >= dtpFechaFinal.Value.AddDays(-3))
             {
-                dtpFechaInicial.Value = dtpFechaFinal.Value.AddDays(-30);
+                dtpFechaInicial.Value = dtpFechaFinal.Value.AddDays(-3);
             }
         }
 
         private void dtpFechaFinal_ValueChanged(object sender, EventArgs e)
         {
-            if(dtpFechaFinal.Value <= dtpFechaInicial.Value.AddDays(30))
+            if(dtpFechaFinal.Value <= dtpFechaInicial.Value.AddDays(3))
             {
-                dtpFechaFinal.Value = dtpFechaInicial.Value.AddDays(30);
+                dtpFechaFinal.Value = dtpFechaInicial.Value.AddDays(3);
             }
         }
 
@@ -79,6 +79,16 @@ namespace LC_II_TP_PARTE_3.Presentacion
         {
             dtpFechaInicial.Enabled = checkBox1.Checked;
             dtpFechaFinal.Enabled = checkBox1.Checked;
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

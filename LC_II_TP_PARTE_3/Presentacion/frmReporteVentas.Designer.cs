@@ -31,13 +31,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmReporteVentas));
             this.panel1 = new System.Windows.Forms.Panel();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelFechaFinal = new System.Windows.Forms.Label();
+            this.labelFechaInicial = new System.Windows.Forms.Label();
             this.dtpFechaFinal = new System.Windows.Forms.DateTimePicker();
             this.dtpFechaInicial = new System.Windows.Forms.DateTimePicker();
             this.btnGenerar = new System.Windows.Forms.Button();
             this.rpvVentas = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.panelFechas = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
+            this.panelFechas.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -46,14 +48,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(167)))), ((int)(((byte)(41)))));
             this.panel1.Controls.Add(this.checkBox1);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.dtpFechaFinal);
-            this.panel1.Controls.Add(this.dtpFechaInicial);
             this.panel1.Controls.Add(this.btnGenerar);
+            this.panel1.Controls.Add(this.panelFechas);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(856, 66);
+            this.panel1.Size = new System.Drawing.Size(1115, 66);
             this.panel1.TabIndex = 0;
             // 
             // checkBox1
@@ -63,39 +62,42 @@
             this.checkBox1.FlatAppearance.BorderSize = 0;
             this.checkBox1.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox1.ForeColor = System.Drawing.Color.White;
-            this.checkBox1.Location = new System.Drawing.Point(128, 23);
+            this.checkBox1.Location = new System.Drawing.Point(130, 23);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(95, 21);
+            this.checkBox1.Size = new System.Drawing.Size(202, 21);
             this.checkBox1.TabIndex = 5;
-            this.checkBox1.Text = "Usar fechas";
+            this.checkBox1.Text = "Limitar por intervalo de fecha:";
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
-            // label2
+            // labelFechaFinal
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(555, 25);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 17);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Fecha Final";
+            this.labelFechaFinal.AutoSize = true;
+            this.labelFechaFinal.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold);
+            this.labelFechaFinal.ForeColor = System.Drawing.Color.White;
+            this.labelFechaFinal.Location = new System.Drawing.Point(321, 10);
+            this.labelFechaFinal.Name = "labelFechaFinal";
+            this.labelFechaFinal.Size = new System.Drawing.Size(80, 17);
+            this.labelFechaFinal.TabIndex = 4;
+            this.labelFechaFinal.Text = "Fecha Final:";
+            this.labelFechaFinal.Click += new System.EventHandler(this.label2_Click);
             // 
-            // label1
+            // labelFechaInicial
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(239, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 17);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Fecha Inicial";
+            this.labelFechaInicial.AutoSize = true;
+            this.labelFechaInicial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(167)))), ((int)(((byte)(41)))));
+            this.labelFechaInicial.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold);
+            this.labelFechaInicial.ForeColor = System.Drawing.Color.White;
+            this.labelFechaInicial.Location = new System.Drawing.Point(13, 10);
+            this.labelFechaInicial.Name = "labelFechaInicial";
+            this.labelFechaInicial.Size = new System.Drawing.Size(87, 17);
+            this.labelFechaInicial.TabIndex = 3;
+            this.labelFechaInicial.Text = "Fecha Inicial:";
+            this.labelFechaInicial.Click += new System.EventHandler(this.label1_Click);
             // 
             // dtpFechaFinal
             // 
-            this.dtpFechaFinal.Location = new System.Drawing.Point(648, 23);
+            this.dtpFechaFinal.Location = new System.Drawing.Point(406, 8);
             this.dtpFechaFinal.Name = "dtpFechaFinal";
             this.dtpFechaFinal.Size = new System.Drawing.Size(200, 20);
             this.dtpFechaFinal.TabIndex = 2;
@@ -103,7 +105,7 @@
             // 
             // dtpFechaInicial
             // 
-            this.dtpFechaInicial.Location = new System.Drawing.Point(339, 23);
+            this.dtpFechaInicial.Location = new System.Drawing.Point(105, 8);
             this.dtpFechaInicial.Name = "dtpFechaInicial";
             this.dtpFechaInicial.Size = new System.Drawing.Size(200, 20);
             this.dtpFechaInicial.TabIndex = 1;
@@ -130,18 +132,34 @@
             // 
             // rpvVentas
             // 
+            this.rpvVentas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.rpvVentas.LocalReport.ReportEmbeddedResource = "LC_II_TP_PARTE_3.Presentacion.Reportes.reporteVentas.rdlc";
             this.rpvVentas.Location = new System.Drawing.Point(12, 72);
             this.rpvVentas.Name = "rpvVentas";
             this.rpvVentas.ServerReport.BearerToken = null;
-            this.rpvVentas.Size = new System.Drawing.Size(832, 441);
+            this.rpvVentas.Size = new System.Drawing.Size(1091, 441);
             this.rpvVentas.TabIndex = 1;
+            // 
+            // panelFechas
+            // 
+            this.panelFechas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelFechas.Controls.Add(this.dtpFechaFinal);
+            this.panelFechas.Controls.Add(this.labelFechaFinal);
+            this.panelFechas.Controls.Add(this.dtpFechaInicial);
+            this.panelFechas.Controls.Add(this.labelFechaInicial);
+            this.panelFechas.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.panelFechas.Location = new System.Drawing.Point(341, 15);
+            this.panelFechas.Name = "panelFechas";
+            this.panelFechas.Size = new System.Drawing.Size(618, 36);
+            this.panelFechas.TabIndex = 2;
             // 
             // frmReporteVentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(856, 525);
+            this.ClientSize = new System.Drawing.Size(1115, 525);
             this.Controls.Add(this.rpvVentas);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -150,6 +168,8 @@
             this.Load += new System.EventHandler(this.frmReporteVentas_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panelFechas.ResumeLayout(false);
+            this.panelFechas.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -157,12 +177,13 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelFechaFinal;
+        private System.Windows.Forms.Label labelFechaInicial;
         private System.Windows.Forms.DateTimePicker dtpFechaFinal;
         private System.Windows.Forms.DateTimePicker dtpFechaInicial;
         private System.Windows.Forms.Button btnGenerar;
         private Microsoft.Reporting.WinForms.ReportViewer rpvVentas;
         private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Panel panelFechas;
     }
 }

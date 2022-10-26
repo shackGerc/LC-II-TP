@@ -128,3 +128,4 @@ D:\Mis documentos\FacuJuli21\laboratorio2\tp1\LC-II-TP\LC_II_TP_PARTE_3\obj\Debu
 D:\Mis documentos\FacuJuli21\laboratorio2\tp1\LC-II-TP\LC_II_TP_PARTE_3\obj\Debug\LC_II_TP_PARTE_3.Presentacion.frmReporteVentas.resources
 D:\Mis documentos\FacuJuli21\laboratorio2\tp1\LC-II-TP\LC_II_TP_PARTE_3\obj\Debug\LC_II_TP_PARTE_3.frmPrincinpal.resources
 D:\Mis documentos\FacuJuli21\laboratorio2\tp1\LC-II-TP\LC_II_TP_PARTE_3\obj\Debug\LC_II_TP_PARTE_3.Presentacion.frmReporteCompras.resources
+D:\Mis documentos\FacuJuli21\laboratorio2\tp1\LC-II-TP\LC_II_TP_PARTE_3\obj\Debug\LC_II_TP_PARTE_3.Presentacion.frmReporteCubiertos.resources

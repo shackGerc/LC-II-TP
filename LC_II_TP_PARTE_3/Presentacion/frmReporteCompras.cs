@@ -1,6 +1,4 @@
 ﻿using LC_II_TP_PARTE_3.AccesoDatos;
-using LC_II_TP_PARTE_3.Presentacion.Reportes;
-using LC_II_TP_PARTE_3.Presentacion.Reportes.DataSet1TableAdapters;
 using Microsoft.Reporting.WinForms;
 using Microsoft.ReportingServices.ReportProcessing.ReportObjectModel;
 using System;
@@ -32,38 +30,42 @@ namespace LC_II_TP_PARTE_3.Presentacion
 
         private void btnGenerar_Click(object sender, EventArgs e)
         {
-            DateTime fecha1,fecha2;
+            List<Parametro> parametros = new List<Parametro>();
             if (checkBox1.Checked)
             {
-                fecha1 = dtpFechaInicial.Value;
-                fecha2 = dtpFechaFinal.Value;
+                parametros.Add(new Parametro("@fecha1", dtpFechaInicial.Value));
+                parametros.Add(new Parametro("@fecha2", dtpFechaFinal.Value));
             }
             else
             {
-                fecha1 = DateTime.Parse("1/1/2000 00:00:00");
-                fecha2 = DateTime.Now;
+                parametros.Add(new Parametro("@fecha1", "1/1/2000 00:00:00"));
+                parametros.Add(new Parametro("@fecha2", DateTime.Now));
             }
-            rpvVentas.LocalReport.SetParameters(new ReportParameter[] { new
-            ReportParameter("FechaInicial", fecha1.ToString()), new ReportParameter("FechaFinal",
-            fecha2.ToString()) });
-            pa_consultar_comprasTableAdapter.Fill(dataSet1.pa_consultar_compras, fecha1, fecha2);
+            DataTable dt = HelperDB.ObtenerInstancia().ConsultaSQL("pa_consultar_compras", parametros);
 
-            rpvVentas.RefreshReport();
+            rpvCompras.LocalReport.DataSources.Clear();
+            rpvCompras.LocalReport.SetParameters(new ReportParameter[] { new
+            ReportParameter("FechaInicial", parametros[0].Valor.ToString()), new ReportParameter("FechaFinal",
+            parametros[1].Valor.ToString()) });
+
+            rpvCompras.LocalReport.DataSources.Add(new Microsoft.Reporting.WinForms.ReportDataSource("DataSet1", dt));
+
+            rpvCompras.RefreshReport();
         }
 
         private void dtpFechaInicial_ValueChanged(object sender, EventArgs e)
         {
-            if(dtpFechaInicial.Value >= dtpFechaFinal.Value.AddDays(-30))
+            if(dtpFechaInicial.Value >= dtpFechaFinal.Value.AddDays(-3))
             {
-                dtpFechaInicial.Value = dtpFechaFinal.Value.AddDays(-30);
+                dtpFechaInicial.Value = dtpFechaFinal.Value.AddDays(-3);
             }
         }
 
         private void dtpFechaFinal_ValueChanged(object sender, EventArgs e)
         {
-            if(dtpFechaFinal.Value <= dtpFechaInicial.Value.AddDays(30))
+            if(dtpFechaFinal.Value <= dtpFechaInicial.Value.AddDays(3))
             {
-                dtpFechaFinal.Value = dtpFechaInicial.Value.AddDays(30);
+                dtpFechaFinal.Value = dtpFechaInicial.Value.AddDays(3);
             }
         }
 
