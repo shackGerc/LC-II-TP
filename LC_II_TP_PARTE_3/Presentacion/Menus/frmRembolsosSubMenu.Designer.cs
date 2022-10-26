@@ -53,7 +53,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmRembolsosSubMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmRembolsosSubMenu";
+            this.Text = "Menu rembolsos";
             this.Load += new System.EventHandler(this.frmRembolsosSubMenu_Load);
             this.ResumeLayout(false);
 
