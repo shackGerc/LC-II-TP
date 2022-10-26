@@ -78,10 +78,28 @@
     <Compile Include="Presentacion\frmReporteCubiertosVendidos.Designer.cs">
       <DependentUpon>frmReporteCubiertosVendidos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\Principal.cs">
+    <Compile Include="Presentacion\Menus\frmComprasSubMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\Principal.Designer.cs">
+    <Compile Include="Presentacion\Menus\frmComprasSubMenu.Designer.cs">
+      <DependentUpon>frmComprasSubMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Menus\frmRembolsosSubMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Menus\frmRembolsosSubMenu.Designer.cs">
+      <DependentUpon>frmRembolsosSubMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Menus\frmVentasSubMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Menus\frmVentasSubMenu.Designer.cs">
+      <DependentUpon>frmVentasSubMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Menus\Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Menus\Principal.Designer.cs">
       <DependentUpon>Principal.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\frmReporteVentas.cs">
@@ -107,7 +125,16 @@
     <EmbeddedResource Include="Presentacion\frmReporteCubiertosVendidos.resx">
       <DependentUpon>frmReporteCubiertosVendidos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Principal.resx">
+    <EmbeddedResource Include="Presentacion\Menus\frmComprasSubMenu.resx">
+      <DependentUpon>frmComprasSubMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Menus\frmRembolsosSubMenu.resx">
+      <DependentUpon>frmRembolsosSubMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Menus\frmVentasSubMenu.resx">
+      <DependentUpon>frmVentasSubMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Menus\Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\frmReporteVentas.resx">

@@ -1,4 +1,5 @@
 ﻿using LC_II_TP_PARTE_3.Presentacion;
+using LC_II_TP_PARTE_3.Presentacion.Menus;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -60,6 +61,12 @@ namespace LC_II_TP_PARTE_3
             pbRetraerBarra.Visible = false;
             pbExpandirBarra.Visible = true;
             SelectorBotones(false);
+            if (reportesMenuExpandido)
+            {
+                ContenedorDeReportes.Height = ContenedorDeReportes.MinimumSize.Height;
+                reportesMenuExpandido = false;
+
+            }
             sideBarTimer.Start();
         }
 
@@ -68,12 +75,6 @@ namespace LC_II_TP_PARTE_3
             pbRetraerBarra.Visible = true;
             pbExpandirBarra.Visible = false;
             SelectorBotones(true);
-
-            if (reportesMenuExpandido)
-            {
-                ContenedorDeReportes.Height = ContenedorDeReportes.MinimumSize.Height;
-            }
-
             sideBarTimer.Start();
         }
 
@@ -117,22 +118,17 @@ namespace LC_II_TP_PARTE_3
 
         private void btnReporteVentas_Click(object sender, EventArgs e)
         {
-            new frmReporteVentas().ShowDialog();
+            new frmVentasSubMenu().ShowDialog();
         }
 
         private void btnReporteCompras_Click(object sender, EventArgs e)
         {
-            new frmReporteCompras().ShowDialog();
+            new frmComprasSubMenu().ShowDialog();
         }
 
         private void btnReporteRembolsos_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void btnReporteSuministros_Click(object sender, EventArgs e)
-        {
-
+            new frmRembolsosSubMenu().ShowDialog();
         }
     }
 }
