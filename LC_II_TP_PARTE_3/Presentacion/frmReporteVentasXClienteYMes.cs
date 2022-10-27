@@ -47,9 +47,18 @@ namespace LC_II_TP_PARTE_3.Presentacion
                 if (char.IsControl(txtAnio.Text[i-1]) || char.IsSymbol(txtAnio.Text[i-1]) ||
                     char.IsLetter(txtAnio.Text[i-1]) ||
                     char.IsPunctuation(txtAnio.Text[i-1]))
+                {
+                    txtAnio.Text = txtAnio.Text.Remove(i-1);
+                }
+                else
+                {
+                    if (char.IsControl(txtAnio.Text[0]) || char.IsSymbol(txtAnio.Text[0]) ||
+                    char.IsLetter(txtAnio.Text[0]) ||
+                    char.IsPunctuation(txtAnio.Text[0]))
                     {
-                        txtAnio.Text = txtAnio.Text.Remove(i-1);
+                        txtAnio.Text = txtAnio.Text.Remove(0);
                     }
+                }
         }
 
         private void btnGenerar_Click(object sender, EventArgs e)

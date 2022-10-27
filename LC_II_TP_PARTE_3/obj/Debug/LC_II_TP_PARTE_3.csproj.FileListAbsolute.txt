@@ -149,3 +149,4 @@ C:\Users\fabio\OneDrive\Escritorio\Repositorios\LC-II-TP\LC_II_TP_PARTE_3\obj\De
 C:\Users\fabio\OneDrive\Escritorio\Repositorios\LC-II-TP\LC_II_TP_PARTE_3\obj\Debug\LC_II_TP_PARTE_3.Presentacion.frmReporteSumiClient.resources
 C:\Users\fabio\OneDrive\Escritorio\Repositorios\LC-II-TP\LC_II_TP_PARTE_3\obj\Debug\LC_II_TP_PARTE_3.Presentacion.frmReporteVentasVendedor.resources
 C:\Users\fabio\OneDrive\Escritorio\Repositorios\LC-II-TP\LC_II_TP_PARTE_3\obj\Debug\LC_II_TP_PARTE_3.Presentacion.frmComprasXClienteYmes.resources
+C:\Users\fabio\OneDrive\Escritorio\Repositorios\LC-II-TP\LC_II_TP_PARTE_3\obj\Debug\LC_II_TP_PARTE_3.Presentacion.frmreporteMasVentasSinRecetaQueCon.resources

@@ -243,6 +243,7 @@ go
 exec SP_SUCURSALES_REEMBOLSOS
 go
 
+--
 CREATE procedure pa_consutar_ventas_x_cliente_x_mes
 @anio int
 as
@@ -271,3 +272,30 @@ end
 
 go
 exec pa_consutar_ventas_x_cliente_x_mes 2022
+
+create proc pa_consultar_clientes_mas_sin_receta_que_con
+@mes smallint,
+@anio int
+as
+begin
+	if(@anio is null or @mes is null)
+	begin
+		raiserror('No se ingresaron los parametros', 16, 1)
+		return
+	end
+	if(@mes > 12 or @mes < 1)
+	begin
+		raiserror('El mes se ingreso en un formato incorrecto', 16, 1)
+		return
+	end
+
+	select cod_cliente 'Codigo', ape_cliente + ', ' + nom_cliente 'Cliente', 
+	nro_doc 'Nro_documento'
+	from Clientes C
+	where (select count(distinct v.nro_venta) 
+		from Ventas v join Recetas r on v.nro_venta=r.nro_venta
+		where cod_cliente=c.cod_cliente and month(fecha)=@mes and year(fecha)=@anio) <
+	  (select count(distinct v.nro_venta) 
+		from Ventas v join Detalles_ventas dv on v.nro_venta=dv.nro_venta
+		where cod_cliente=c.cod_cliente and month(fecha)=@mes and year(fecha)=@anio)
+end

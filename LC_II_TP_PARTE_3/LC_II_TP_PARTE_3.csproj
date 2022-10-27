@@ -144,6 +144,12 @@
     <Compile Include="Presentacion\frmReporteVentas.Designer.cs">
       <DependentUpon>frmReporteVentas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentacion\frmreporteMasVentasSinRecetaQueCon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmreporteMasVentasSinRecetaQueCon.Designer.cs">
+      <DependentUpon>frmreporteMasVentasSinRecetaQueCon.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentacion\Reportes\DataSet1.cs">
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
@@ -166,6 +172,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\frmReporteCubiertosVendidos.resx">
       <DependentUpon>frmReporteCubiertosVendidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmreporteMasVentasSinRecetaQueCon.resx">
+      <DependentUpon>frmreporteMasVentasSinRecetaQueCon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\frmReporteReembolso.resx">
       <DependentUpon>frmReporteReembolso.cs</DependentUpon>
@@ -196,6 +205,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Reportes\reporteCompras.rdlc" />
     <EmbeddedResource Include="Presentacion\Reportes\reporteCubiertosVendidos.rdlc" />
+    <EmbeddedResource Include="Presentacion\Reportes\reporteMasVentasSinRecetaQueCon.rdlc" />
     <EmbeddedResource Include="Presentacion\Reportes\reporteProductos.rdlc" />
     <EmbeddedResource Include="Presentacion\Reportes\reporteReembolso.rdlc" />
     <EmbeddedResource Include="Presentacion\Reportes\reporteSucursales.rdlc" />

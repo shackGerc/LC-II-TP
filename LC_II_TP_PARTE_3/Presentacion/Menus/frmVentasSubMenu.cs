@@ -13,7 +13,7 @@ namespace LC_II_TP_PARTE_3.Presentacion.Menus
     public partial class frmVentasSubMenu : Form
     {
         string[] reportes = { "Ventas totales", "Suministros cubiertos vendidos", "Ventas por vendedor", "Suministros por cliente",
-        "Ventas por cliente"};
+        "Ventas por cliente", "Ventas por cliente sin más receta que con receta"};
         public frmVentasSubMenu()
         {
             InitializeComponent();
@@ -44,6 +44,10 @@ namespace LC_II_TP_PARTE_3.Presentacion.Menus
                         break;
                     case 4:
                         new frmComprasXClienteYmes().ShowDialog();
+                        lstOpciones.SelectedIndex = -1;
+                        break;
+                    case 5:
+                        new frmreporteMasVentasSinRecetaQueCon().ShowDialog();
                         lstOpciones.SelectedIndex = -1;
                         break;
                 }
