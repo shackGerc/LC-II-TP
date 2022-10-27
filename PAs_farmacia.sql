@@ -242,3 +242,32 @@ ORDER BY 'Calle'
 go
 exec SP_SUCURSALES_REEMBOLSOS
 go
+
+CREATE procedure pa_consutar_ventas_x_cliente_x_mes
+@anio int
+as
+begin
+	if(@anio is null)
+		raiserror('No se ingreso el parametro año', 16, 1)
+	else
+		select ape_cliente + ', ' + nom_cliente 'Cliente',
+		month(fecha) 'Mes',
+		count(rv.nro_venta)'Cantidad_ventas_receta',
+		count(dv.nro_venta) 'Cantidad_ventas_sin_receta',
+		sum(rv.cantidad_total)'Cantidad_articulos_receta',
+		sum(dv.cantidad_total) 'Cantidad_articulos_sin_receta'
+		from Clientes c
+		join Ventas v  on v.cod_cliente=c.cod_cliente
+		left join (select nro_venta,sum(cantidad)cantidad_total from Detalles_ventas 
+		group by nro_venta) dv
+		on v.nro_venta = dv.nro_venta
+		left join (select nro_venta,sum(cantidad) cantidad_total from Recetas 
+		group by nro_venta) rv
+		on  v.nro_venta = rv.nro_venta
+		where year(fecha)=@anio
+		group by c.cod_cliente, ape_cliente + ', ' + nom_cliente, month(fecha)
+		order by 1, 2
+end
+
+go
+exec pa_consutar_ventas_x_cliente_x_mes 2022
