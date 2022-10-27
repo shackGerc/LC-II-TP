@@ -43,7 +43,7 @@ namespace LC_II_TP_PARTE_3.Presentacion.Menus
                         lstOpciones.SelectedIndex = -1;
                         break;
                     case 4:
-
+                        new frmComprasXClienteYmes().ShowDialog();
                         lstOpciones.SelectedIndex = -1;
                         break;
                 }

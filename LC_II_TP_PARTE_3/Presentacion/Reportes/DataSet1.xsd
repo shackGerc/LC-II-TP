@@ -112,6 +112,18 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+        <xs:element name="dataVentasPorClienteYMes" msprop:Generator_RowEvHandlerName="dataVentasPorClienteYMesRowChangeEventHandler" msprop:Generator_RowDeletedName="dataVentasPorClienteYMesRowDeleted" msprop:Generator_RowDeletingName="dataVentasPorClienteYMesRowDeleting" msprop:Generator_RowEvArgName="dataVentasPorClienteYMesRowChangeEvent" msprop:Generator_TablePropName="dataVentasPorClienteYMes" msprop:Generator_RowChangedName="dataVentasPorClienteYMesRowChanged" msprop:Generator_RowChangingName="dataVentasPorClienteYMesRowChanging" msprop:Generator_TableClassName="dataVentasPorClienteYMesDataTable" msprop:Generator_RowClassName="dataVentasPorClienteYMesRow" msprop:Generator_TableVarName="tabledataVentasPorClienteYMes" msprop:Generator_UserTableName="dataVentasPorClienteYMes">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Cliente" msprop:Generator_ColumnPropNameInRow="Cliente" msprop:Generator_ColumnPropNameInTable="ClienteColumn" msprop:Generator_ColumnVarNameInTable="columnCliente" msprop:Generator_UserColumnName="Cliente" type="xs:string" minOccurs="0" />
+              <xs:element name="Mes" msprop:Generator_ColumnPropNameInRow="Mes" msprop:Generator_ColumnPropNameInTable="MesColumn" msprop:Generator_ColumnVarNameInTable="columnMes" msprop:Generator_UserColumnName="Mes" type="xs:string" minOccurs="0" />
+              <xs:element name="Cantidad_ventas_receta" msprop:Generator_ColumnPropNameInRow="Cantidad_ventas_receta" msprop:Generator_ColumnPropNameInTable="Cantidad_ventas_recetaColumn" msprop:Generator_ColumnVarNameInTable="columnCantidad_ventas_receta" msprop:Generator_UserColumnName="Cantidad_ventas_receta" type="xs:string" minOccurs="0" />
+              <xs:element name="Cantidad_ventas_sin_receta" msprop:Generator_ColumnPropNameInRow="Cantidad_ventas_sin_receta" msprop:Generator_ColumnPropNameInTable="Cantidad_ventas_sin_recetaColumn" msprop:Generator_ColumnVarNameInTable="columnCantidad_ventas_sin_receta" msprop:Generator_UserColumnName="Cantidad_ventas_sin_receta" type="xs:string" minOccurs="0" />
+              <xs:element name="Cantidad_articulos_receta" msprop:Generator_ColumnPropNameInRow="Cantidad_articulos_receta" msprop:Generator_ColumnPropNameInTable="Cantidad_articulos_recetaColumn" msprop:Generator_ColumnVarNameInTable="columnCantidad_articulos_receta" msprop:Generator_UserColumnName="Cantidad_articulos_receta" type="xs:string" minOccurs="0" />
+              <xs:element name="Cantidad_articulos_sin_receta" msprop:Generator_ColumnPropNameInRow="Cantidad_articulos_sin_receta" msprop:Generator_ColumnPropNameInTable="Cantidad_articulos_sin_recetaColumn" msprop:Generator_ColumnVarNameInTable="columnCantidad_articulos_sin_receta" msprop:Generator_UserColumnName="Cantidad_articulos_sin_receta" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
       </xs:choice>
     </xs:complexType>
     <xs:unique name="Constraint11">

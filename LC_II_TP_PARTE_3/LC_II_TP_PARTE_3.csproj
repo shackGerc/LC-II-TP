@@ -108,6 +108,12 @@
     <Compile Include="Presentacion\frmReporteVentasVendedor.Designer.cs">
       <DependentUpon>frmReporteVentasVendedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentacion\frmReporteVentasXClienteYMes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmReporteVentasXClienteYMes.designer.cs">
+      <DependentUpon>frmReporteVentasXClienteYMes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentacion\Menus\frmComprasSubMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,6 +176,9 @@
     <EmbeddedResource Include="Presentacion\frmReporteVentasVendedor.resx">
       <DependentUpon>frmReporteVentasVendedor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmReporteVentasXClienteYMes.resx">
+      <DependentUpon>frmReporteVentasXClienteYMes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Menus\frmComprasSubMenu.resx">
       <DependentUpon>frmComprasSubMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -191,6 +200,9 @@
     <EmbeddedResource Include="Presentacion\Reportes\reporteReembolso.rdlc" />
     <EmbeddedResource Include="Presentacion\Reportes\reporteSucursales.rdlc" />
     <EmbeddedResource Include="Presentacion\Reportes\reporteSumiClient.rdlc" />
+    <EmbeddedResource Include="Presentacion\Reportes\reporteVentasPorClienteYmesGrafico.rdlc" />
+    <EmbeddedResource Include="Presentacion\Reportes\reporteVentasPorClienteYmesGraficoSums.rdlc" />
+    <EmbeddedResource Include="Presentacion\Reportes\reporteVentasPorClienteYmesTabla.rdlc" />
     <EmbeddedResource Include="Presentacion\Reportes\reporteVentasVendedor.rdlc" />
     <EmbeddedResource Include="Presentacion\Reportes\reporteVentas.rdlc" />
     <EmbeddedResource Include="Properties\Resources.resx">
