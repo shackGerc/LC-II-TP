@@ -36,8 +36,8 @@ namespace LC_II_TP_PARTE_3.Presentacion
             }
             if (checkDescuento.Checked)
             {
-                parametros.Add(new Parametro("@descuento1", dtpFechaInicial.Value));
-                parametros.Add(new Parametro("@descuento2", dtpFechaFinal.Value));
+                parametros.Add(new Parametro("@descuento1", numDescMin.Value));
+                parametros.Add(new Parametro("@descuento2", numDescMax.Value));
             }
             else
             {
@@ -60,7 +60,7 @@ namespace LC_II_TP_PARTE_3.Presentacion
                 new ReportParameter("FechaFinal", parametros[1].Valor.ToString()),
                 new ReportParameter("DescuentoMinimo", parametros[2].Valor.ToString()),
                 new ReportParameter("DescuentoMaximo", parametros[3].Valor.ToString()),
-                new ReportParameter("NoVendidos", parametros[4].Valor.ToString())
+                new ReportParameter("NoVendidos", ((int)parametros[4].Valor==1)? "Si":"No")
             });
 
             rpvCompras.LocalReport.DataSources.Add(new Microsoft.Reporting.WinForms.ReportDataSource("DataSet1", dt));
@@ -81,6 +81,7 @@ namespace LC_II_TP_PARTE_3.Presentacion
             if (dtpFechaFinal.Value <= dtpFechaInicial.Value.AddDays(3))
             {
                 dtpFechaFinal.Value = dtpFechaInicial.Value.AddDays(3);
+                MessageBox.Show("asasdasdasd");
             }
         }
 
@@ -116,6 +117,16 @@ namespace LC_II_TP_PARTE_3.Presentacion
         private void checkFechas_CheckedChanged(object sender, EventArgs e)
         {
             ActivarFechas();
+        }
+
+        private void checkNoVendidos_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkDescuento_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -8,6 +8,10 @@ namespace LC_II_TP_PARTE_3.Presentacion.Reportes
 
     public partial class DataSet1
     {
+        partial class dataVentasVendedorDataTable
+        {
+        }
+
         partial class dataComprasDataTable
         {
         }

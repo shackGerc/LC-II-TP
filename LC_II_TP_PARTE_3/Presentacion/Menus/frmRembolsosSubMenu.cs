@@ -27,12 +27,12 @@ namespace LC_II_TP_PARTE_3.Presentacion.Menus
                 {
                     case 0:
                         // Rembolsos totales
-
+                        new frmReembolso().ShowDialog();
                         lstOpciones.SelectedIndex = -1;
                         break;
                     case 1:
                         //Rembolso por sucursal
-
+                        new formSucursales().ShowDialog();
                         lstOpciones.SelectedIndex = -1;
                         break;
                 }

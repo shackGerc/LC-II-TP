@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LC_II_TP_PARTE_3.Presentacion.Reportes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -39,7 +40,7 @@ namespace LC_II_TP_PARTE_3.Presentacion.Menus
                         break;
                     case 1:
                         //Productos más comprados
-
+                        new frmReporteCompProductos().ShowDialog();
                         lstOpciones.SelectedIndex = -1;
                         break;
                 }

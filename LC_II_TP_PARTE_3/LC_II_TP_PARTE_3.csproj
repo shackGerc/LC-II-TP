@@ -66,6 +66,18 @@
   <ItemGroup>
     <Compile Include="AccesoDatos\HelperDB.cs" />
     <Compile Include="AccesoDatos\Parametro.cs" />
+    <Compile Include="Presentacion\formSucursales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\formSucursales.Designer.cs">
+      <DependentUpon>formSucursales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmReporteCompProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmReporteCompProductos.designer.cs">
+      <DependentUpon>frmReporteCompProductos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentacion\frmReporteCompras.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +89,24 @@
     </Compile>
     <Compile Include="Presentacion\frmReporteCubiertosVendidos.Designer.cs">
       <DependentUpon>frmReporteCubiertosVendidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmReporteReembolso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmReporteReembolso.designer.cs">
+      <DependentUpon>frmReporteReembolso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmReporteSumiClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmReporteSumiClient.Designer.cs">
+      <DependentUpon>frmReporteSumiClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmReporteVentasVendedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmReporteVentasVendedor.Designer.cs">
+      <DependentUpon>frmReporteVentasVendedor.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\Menus\frmComprasSubMenu.cs">
       <SubType>Form</SubType>
@@ -119,11 +149,26 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="Presentacion\formSucursales.resx">
+      <DependentUpon>formSucursales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmReporteCompProductos.resx">
+      <DependentUpon>frmReporteCompProductos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\frmReporteCompras.resx">
       <DependentUpon>frmReporteCompras.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\frmReporteCubiertosVendidos.resx">
       <DependentUpon>frmReporteCubiertosVendidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmReporteReembolso.resx">
+      <DependentUpon>frmReporteReembolso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmReporteSumiClient.resx">
+      <DependentUpon>frmReporteSumiClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmReporteVentasVendedor.resx">
+      <DependentUpon>frmReporteVentasVendedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Menus\frmComprasSubMenu.resx">
       <DependentUpon>frmComprasSubMenu.cs</DependentUpon>
@@ -142,6 +187,11 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Reportes\reporteCompras.rdlc" />
     <EmbeddedResource Include="Presentacion\Reportes\reporteCubiertosVendidos.rdlc" />
+    <EmbeddedResource Include="Presentacion\Reportes\reporteProductos.rdlc" />
+    <EmbeddedResource Include="Presentacion\Reportes\reporteReembolso.rdlc" />
+    <EmbeddedResource Include="Presentacion\Reportes\reporteSucursales.rdlc" />
+    <EmbeddedResource Include="Presentacion\Reportes\reporteSumiClient.rdlc" />
+    <EmbeddedResource Include="Presentacion\Reportes\reporteVentasVendedor.rdlc" />
     <EmbeddedResource Include="Presentacion\Reportes\reporteVentas.rdlc" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

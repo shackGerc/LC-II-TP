@@ -180,8 +180,6 @@
         private System.Windows.Forms.Button btnGenerar;
         private Microsoft.Reporting.WinForms.ReportViewer rpvCompras;
         private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.BindingSource paconsultarcomprasBindingSource;
-        private Reportes.DataSet1 dataSet1;
         private System.Windows.Forms.Panel panel2;
     }
 }

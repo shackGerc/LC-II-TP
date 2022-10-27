@@ -128,10 +128,18 @@ D:\Mis documentos\FacuJuli21\laboratorio2\tp1\LC-II-TP\LC_II_TP_PARTE_3\obj\Debu
 D:\Mis documentos\FacuJuli21\laboratorio2\tp1\LC-II-TP\LC_II_TP_PARTE_3\obj\Debug\LC_II_TP_PARTE_3.Presentacion.frmReporteVentas.resources
 D:\Mis documentos\FacuJuli21\laboratorio2\tp1\LC-II-TP\LC_II_TP_PARTE_3\obj\Debug\LC_II_TP_PARTE_3.frmPrincinpal.resources
 D:\Mis documentos\FacuJuli21\laboratorio2\tp1\LC-II-TP\LC_II_TP_PARTE_3\obj\Debug\LC_II_TP_PARTE_3.Presentacion.frmReporteCompras.resources
-D:\Mis documentos\FacuJuli21\laboratorio2\tp1\LC-II-TP\LC_II_TP_PARTE_3\obj\Debug\LC_II_TP_PARTE_3.Presentacion.frmReporteCubiertos.resources
 C:\Users\fabio\OneDrive\Escritorio\Repositorios\LC-II-TP\LC_II_TP_PARTE_3\obj\Debug\LC_II_TP_PARTE_3.Presentacion.frmReporteCompras.resources
 C:\Users\fabio\OneDrive\Escritorio\Repositorios\LC-II-TP\LC_II_TP_PARTE_3\obj\Debug\LC_II_TP_PARTE_3.Presentacion.frmReporteCubiertosVendidos.resources
 C:\Users\fabio\OneDrive\Escritorio\Repositorios\LC-II-TP\LC_II_TP_PARTE_3\obj\Debug\LC_II_TP_PARTE_3.Presentacion.Menus.frmVentasSubMenu.resources
 C:\Users\fabio\OneDrive\Escritorio\Repositorios\LC-II-TP\LC_II_TP_PARTE_3\obj\Debug\LC_II_TP_PARTE_3.Presentacion.frmReporteVentas.resources
 C:\Users\fabio\OneDrive\Escritorio\Repositorios\LC-II-TP\LC_II_TP_PARTE_3\obj\Debug\LC_II_TP_PARTE_3.Presentacion.Menus.frmComprasSubMenu.resources
 C:\Users\fabio\OneDrive\Escritorio\Repositorios\LC-II-TP\LC_II_TP_PARTE_3\obj\Debug\LC_II_TP_PARTE_3.Presentacion.Menus.frmRembolsosSubMenu.resources
+D:\Mis documentos\FacuJuli21\laboratorio2\tp1\LC-II-TP\LC_II_TP_PARTE_3\obj\Debug\LC_II_TP_PARTE_3.Presentacion.formSucursales.resources
+D:\Mis documentos\FacuJuli21\laboratorio2\tp1\LC-II-TP\LC_II_TP_PARTE_3\obj\Debug\LC_II_TP_PARTE_3.Presentacion.Reportes.frmReporteCompProductos.resources
+D:\Mis documentos\FacuJuli21\laboratorio2\tp1\LC-II-TP\LC_II_TP_PARTE_3\obj\Debug\LC_II_TP_PARTE_3.Presentacion.frmReporteCubiertosVendidos.resources
+D:\Mis documentos\FacuJuli21\laboratorio2\tp1\LC-II-TP\LC_II_TP_PARTE_3\obj\Debug\LC_II_TP_PARTE_3.Presentacion.frmReembolso.resources
+D:\Mis documentos\FacuJuli21\laboratorio2\tp1\LC-II-TP\LC_II_TP_PARTE_3\obj\Debug\LC_II_TP_PARTE_3.Presentacion.frmReporteSumiClient.resources
+D:\Mis documentos\FacuJuli21\laboratorio2\tp1\LC-II-TP\LC_II_TP_PARTE_3\obj\Debug\LC_II_TP_PARTE_3.Presentacion.frmReporteVentasVendedor.resources
+D:\Mis documentos\FacuJuli21\laboratorio2\tp1\LC-II-TP\LC_II_TP_PARTE_3\obj\Debug\LC_II_TP_PARTE_3.Presentacion.Menus.frmComprasSubMenu.resources
+D:\Mis documentos\FacuJuli21\laboratorio2\tp1\LC-II-TP\LC_II_TP_PARTE_3\obj\Debug\LC_II_TP_PARTE_3.Presentacion.Menus.frmRembolsosSubMenu.resources
+D:\Mis documentos\FacuJuli21\laboratorio2\tp1\LC-II-TP\LC_II_TP_PARTE_3\obj\Debug\LC_II_TP_PARTE_3.Presentacion.Menus.frmVentasSubMenu.resources

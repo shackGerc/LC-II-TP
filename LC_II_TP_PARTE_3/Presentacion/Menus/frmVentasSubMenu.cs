@@ -31,15 +31,15 @@ namespace LC_II_TP_PARTE_3.Presentacion.Menus
                         lstOpciones.SelectedIndex = -1;
                         break;
                     case 1:
-
+                        new frmReporteCubiertosVendidos().ShowDialog();
                         lstOpciones.SelectedIndex = -1;
                         break;
                     case 2:
-
+                        new frmReporteVentasVendedor().ShowDialog();
                         lstOpciones.SelectedIndex = -1;
                         break;
                     case 3:
-
+                        new frmReporteSumiClient().ShowDialog();
                         lstOpciones.SelectedIndex = -1;
                         break;
                     case 4:

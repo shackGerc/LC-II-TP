@@ -57,11 +57,11 @@
             this.rpvCompras.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.rpvCompras.LocalReport.ReportEmbeddedResource = "LC_II_TP_PARTE_3.Presentacion.Reportes.reporteCompras.rdlc";
-            this.rpvCompras.Location = new System.Drawing.Point(12, 143);
+            this.rpvCompras.LocalReport.ReportEmbeddedResource = "LC_II_TP_PARTE_3.Presentacion.Reportes.reporteCubiertosVendidos.rdlc";
+            this.rpvCompras.Location = new System.Drawing.Point(12, 123);
             this.rpvCompras.Name = "rpvCompras";
             this.rpvCompras.ServerReport.BearerToken = null;
-            this.rpvCompras.Size = new System.Drawing.Size(1070, 491);
+            this.rpvCompras.Size = new System.Drawing.Size(1070, 511);
             this.rpvCompras.TabIndex = 3;
             // 
             // panel1
@@ -77,7 +77,7 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1097, 137);
+            this.panel1.Size = new System.Drawing.Size(1097, 117);
             this.panel1.TabIndex = 2;
             // 
             // checkNoVendidos
@@ -87,12 +87,13 @@
             this.checkNoVendidos.FlatAppearance.BorderSize = 0;
             this.checkNoVendidos.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkNoVendidos.ForeColor = System.Drawing.Color.White;
-            this.checkNoVendidos.Location = new System.Drawing.Point(127, 99);
+            this.checkNoVendidos.Location = new System.Drawing.Point(118, 86);
             this.checkNoVendidos.Name = "checkNoVendidos";
             this.checkNoVendidos.Size = new System.Drawing.Size(157, 21);
             this.checkNoVendidos.TabIndex = 9;
             this.checkNoVendidos.Text = "Incluir nunca vendidos";
             this.checkNoVendidos.UseVisualStyleBackColor = true;
+            this.checkNoVendidos.CheckedChanged += new System.EventHandler(this.checkNoVendidos_CheckedChanged);
             // 
             // checkDescuento
             // 
@@ -101,12 +102,13 @@
             this.checkDescuento.FlatAppearance.BorderSize = 0;
             this.checkDescuento.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkDescuento.ForeColor = System.Drawing.Color.White;
-            this.checkDescuento.Location = new System.Drawing.Point(127, 59);
+            this.checkDescuento.Location = new System.Drawing.Point(118, 49);
             this.checkDescuento.Name = "checkDescuento";
             this.checkDescuento.Size = new System.Drawing.Size(207, 21);
             this.checkDescuento.TabIndex = 7;
             this.checkDescuento.Text = "Limitar por valor de descuento";
             this.checkDescuento.UseVisualStyleBackColor = true;
+            this.checkDescuento.CheckedChanged += new System.EventHandler(this.checkDescuento_CheckedChanged);
             // 
             // panel3
             // 
@@ -115,14 +117,14 @@
             this.panel3.Controls.Add(this.numDescMin);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.label4);
-            this.panel3.Location = new System.Drawing.Point(340, 51);
+            this.panel3.Location = new System.Drawing.Point(331, 49);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(553, 36);
+            this.panel3.Size = new System.Drawing.Size(553, 34);
             this.panel3.TabIndex = 8;
             // 
             // numDescMax
             // 
-            this.numDescMax.Location = new System.Drawing.Point(416, 7);
+            this.numDescMax.Location = new System.Drawing.Point(416, 6);
             this.numDescMax.Minimum = new decimal(new int[] {
             1,
             0,
@@ -140,7 +142,7 @@
             // 
             // numDescMin
             // 
-            this.numDescMin.Location = new System.Drawing.Point(141, 7);
+            this.numDescMin.Location = new System.Drawing.Point(141, 6);
             this.numDescMin.Name = "numDescMin";
             this.numDescMin.Size = new System.Drawing.Size(120, 20);
             this.numDescMin.TabIndex = 5;
@@ -151,7 +153,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(280, 10);
+            this.label3.Location = new System.Drawing.Point(280, 9);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(130, 17);
             this.label3.TabIndex = 4;
@@ -162,7 +164,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(6, 10);
+            this.label4.Location = new System.Drawing.Point(6, 9);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(128, 17);
             this.label4.TabIndex = 3;
@@ -175,7 +177,7 @@
             this.checkFechas.FlatAppearance.BorderSize = 0;
             this.checkFechas.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkFechas.ForeColor = System.Drawing.Color.White;
-            this.checkFechas.Location = new System.Drawing.Point(127, 17);
+            this.checkFechas.Location = new System.Drawing.Point(118, 12);
             this.checkFechas.Name = "checkFechas";
             this.checkFechas.Size = new System.Drawing.Size(253, 21);
             this.checkFechas.TabIndex = 5;
@@ -193,7 +195,7 @@
             this.btnGenerar.ForeColor = System.Drawing.Color.White;
             this.btnGenerar.Image = ((System.Drawing.Image)(resources.GetObject("btnGenerar.Image")));
             this.btnGenerar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGenerar.Location = new System.Drawing.Point(12, 30);
+            this.btnGenerar.Location = new System.Drawing.Point(12, 20);
             this.btnGenerar.Name = "btnGenerar";
             this.btnGenerar.Size = new System.Drawing.Size(100, 75);
             this.btnGenerar.TabIndex = 0;
@@ -209,14 +211,14 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.dtpFechaInicial);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(386, 9);
+            this.panel2.Location = new System.Drawing.Point(377, 7);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(608, 36);
+            this.panel2.Size = new System.Drawing.Size(608, 34);
             this.panel2.TabIndex = 6;
             // 
             // dtpFechaFinal
             // 
-            this.dtpFechaFinal.Location = new System.Drawing.Point(396, 8);
+            this.dtpFechaFinal.Location = new System.Drawing.Point(396, 6);
             this.dtpFechaFinal.Name = "dtpFechaFinal";
             this.dtpFechaFinal.Size = new System.Drawing.Size(200, 20);
             this.dtpFechaFinal.TabIndex = 2;
@@ -226,7 +228,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(316, 10);
+            this.label2.Location = new System.Drawing.Point(316, 8);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(80, 17);
             this.label2.TabIndex = 4;
@@ -234,7 +236,7 @@
             // 
             // dtpFechaInicial
             // 
-            this.dtpFechaInicial.Location = new System.Drawing.Point(93, 8);
+            this.dtpFechaInicial.Location = new System.Drawing.Point(93, 6);
             this.dtpFechaInicial.Name = "dtpFechaInicial";
             this.dtpFechaInicial.Size = new System.Drawing.Size(200, 20);
             this.dtpFechaInicial.TabIndex = 1;
@@ -245,21 +247,21 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(6, 10);
+            this.label1.Location = new System.Drawing.Point(6, 8);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(87, 17);
             this.label1.TabIndex = 3;
             this.label1.Text = "Fecha Inicial:";
             // 
-            // frmReporteCubiertos
+            // frmReporteCubiertosVendidos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1094, 646);
             this.Controls.Add(this.rpvCompras);
             this.Controls.Add(this.panel1);
-            this.Name = "frmReporteCubiertos";
-            this.Text = "frmReporteCubiertos";
+            this.Name = "frmReporteCubiertosVendidos";
+            this.Text = "Reporte de Cubiertos Vendidos";
             this.Load += new System.EventHandler(this.frmReporteCubiertos_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
