@@ -505,7 +505,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=FormatNumber(Fields!total_cobrado.Value,2)</Value>
+                                  <Value>=FormatNumber(Fields!total_cobrado.Value,2) &amp; "$"</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -599,7 +599,7 @@
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>2in</Height>
+        <Height>1.63542in</Height>
         <Style />
       </Body>
       <Width>8.92659in</Width>
@@ -616,7 +616,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Reporte de ventas</Value>
+                      <Value>Reporte de reembolsos</Value>
                       <Style>
                         <FontFamily>Bahnschrift</FontFamily>
                         <FontSize>16pt</FontSize>
@@ -628,7 +628,7 @@
               </Paragraphs>
               <rd:DefaultName>Textbox1</rd:DefaultName>
               <Top>0.22931cm</Top>
-              <Left>1.20479cm</Left>
+              <Left>0.80792cm</Left>
               <Height>0.9175cm</Height>
               <Width>7.23604cm</Width>
               <Style>

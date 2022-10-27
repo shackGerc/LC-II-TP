@@ -488,7 +488,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>="Añp: " &amp; Parameters!Anio.Value</Value>
+                      <Value>="Año: " &amp; Parameters!Anio.Value</Value>
                       <Style />
                     </TextRun>
                   </TextRuns>

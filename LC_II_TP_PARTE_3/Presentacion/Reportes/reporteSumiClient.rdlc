@@ -362,7 +362,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>Reporte de suministros vendidos por clientes</Value>
+                  <Value>Reporte de suministros que compró cada cliente</Value>
                   <Style>
                     <FontFamily>Bahnschrift</FontFamily>
                     <FontSize>16pt</FontSize>

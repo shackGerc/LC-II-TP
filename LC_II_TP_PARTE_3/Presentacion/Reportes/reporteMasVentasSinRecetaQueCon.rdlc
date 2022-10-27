@@ -48,13 +48,13 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>6.76156cm</Width>
+                  <Width>3.14559cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>6.76156cm</Width>
+                  <Width>9.28392cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>7.43889cm</Width>
+                  <Width>5.91313cm</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -71,10 +71,14 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Código</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox3</rd:DefaultName>
@@ -101,10 +105,14 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Cliente</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox5</rd:DefaultName>
@@ -131,10 +139,14 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Nro. documento</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox7</rd:DefaultName>
@@ -169,7 +181,9 @@
                                   <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Codigo</rd:DefaultName>
@@ -199,7 +213,9 @@
                                   <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Cliente</rd:DefaultName>
@@ -229,7 +245,9 @@
                                   <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Nro_documento</rd:DefaultName>
@@ -268,10 +286,10 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet1</DataSetName>
-            <Top>1.80657cm</Top>
-            <Left>4.08369cm</Left>
+            <Top>0.80115cm</Top>
+            <Left>0.55033cm</Left>
             <Height>1.2cm</Height>
-            <Width>20.962cm</Width>
+            <Width>18.34264cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -279,10 +297,10 @@
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>2.00833in</Height>
+        <Height>1.19583in</Height>
         <Style />
       </Body>
-      <Width>10.80159in</Width>
+      <Width>8.10367in</Width>
       <Page>
         <PageHeader>
           <Height>3.09563cm</Height>
@@ -296,7 +314,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Reporte de ventas a clientes con más compras sin receta que con receta</Value>
+                      <Value>Reporte de clientes con más compras sin receta que con receta</Value>
                       <Style>
                         <FontFamily>Bahnschrift</FontFamily>
                         <FontSize>16pt</FontSize>
@@ -310,7 +328,7 @@
               <Top>0.33348cm</Top>
               <Left>0.55033cm</Left>
               <Height>0.9175cm</Height>
-              <Width>18.83537cm</Width>
+              <Width>16.24245cm</Width>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -325,8 +343,8 @@
               <Source>Embedded</Source>
               <Value>LogoPrincipal</Value>
               <Sizing>FitProportional</Sizing>
-              <Top>0.16674cm</Top>
-              <Left>24.34041cm</Left>
+              <Top>0.33348cm</Top>
+              <Left>17.43478cm</Left>
               <Height>2.56646cm</Height>
               <Width>2.56646cm</Width>
               <ZIndex>1</ZIndex>
@@ -424,7 +442,7 @@
               </Paragraphs>
               <rd:DefaultName>PageNumber</rd:DefaultName>
               <Top>0.97cm</Top>
-              <Left>12.46802cm</Left>
+              <Left>9.04166cm</Left>
               <Height>0.6cm</Height>
               <Width>2.5cm</Width>
               <Style>
